@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Gelvazio Camargo - Desenvolvedor Backend Senior, Professor e Especialista em IA">
+  <title>Gelvazio Camargo | Backend Developer &bull; Professor &bull; IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="nav" id="nav">
+    <div class="nav-brand">GC</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link active">Inicio</a></li>
+      <li><a href="#sobre" class="nav-link">Sobre</a></li>
+      <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#formacao" class="nav-link">Formacao</a></li>
+      <li><a href="#contato" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content reveal">
+      <p class="hero-greeting">Ola, eu sou</p>
+      <h1 class="hero-name">Gelvazio Camargo</h1>
+      <div class="hero-typing">
+        <span class="hero-typing-text" id="typing-text"></span>
+        <span class="hero-cursor">|</span>
+      </div>
+      <div class="hero-cards">
+        <div class="hero-card hero-card--backend">
+          <div class="hero-card-icon">&lt;/&gt;</div>
+          <h3>Backend Developer</h3>
+          <p>PHP &bull; Python &bull; Laravel &bull; Django</p>
+        </div>
+        <div class="hero-card hero-card--professor">
+          <div class="hero-card-icon">&#x1F393;</div>
+          <h3>Professor</h3>
+          <p>Senac SC &bull; Dev Backend &amp; Frontend</p>
+        </div>
+        <div class="hero-card hero-card--ia">
+          <div class="hero-card-icon">&#x1F9E0;</div>
+          <h3>IA Engineer</h3>
+          <p>Pos-Graduacao em Eng. de IA Aplicada</p>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#contato" class="btn-cta btn-cta--primary">Fale Comigo</a>
+        <a href="CURRICULO_GELVAZIO_CAMARGO_V2.pdf" download class="btn-cta btn-cta--secondary">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-title-accent">01.</span> Sobre Mim
+      </h2>
+      <div class="sobre-grid reveal">
+        <div class="sobre-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-placeholder">GC</div>
+          </div>
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Anos Exp.</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Empresas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">7+</span>
+              <span class="stat-label">Certificacoes</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-text">
+          <p>
+            Desenvolvedor Full Stack e Backend Senior com mais de <strong>15 anos de experiencia</strong>
+            em desenvolvimento de software, analise de sistemas e educacao tecnologica.
+          </p>
+          <p>
+            Especialista em <strong>PHP</strong>, <strong>Python</strong> e <strong>Inteligencia Artificial</strong>,
+            com atuacao em projetos de gestao publica, ERP, qualidade de software e aplicacoes web escalaveis.
+          </p>
+          <p>
+            Possuo forte capacidade analitica, visao sistemica e experiencia em ambientes ageis.
+            Tambem atuei como <strong>professor no Senac SC</strong>, formando profissionais nas areas de
+            desenvolvimento Backend e Frontend.
+          </p>
+          <p>
+            Atualmente cursando <strong>Pos-Graduacao em Engenharia de IA Aplicada</strong> pela Universidade
+            Anhanguera, buscando unir experiencia de backend com o poder da Inteligencia Artificial.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="section section--alt" id="experiencia">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-title-accent">02.</span> Experiencia Profissional
+      </h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Desenvolvedor Full Stack PHP | Python</h3>
+                <p class="timeline-company">T2</p>
+              </div>
+              <span class="timeline-period">06/2019 &mdash; 05/2026</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Desenvolvimento e manutencao de sistemas web em PHP, Python e Laravel</li>
+              <li>Implementacao de APIs REST e integracao com sistemas contabeis, fiscais, bancarios e meios de pagamento</li>
+              <li>Automacao de processos financeiros, conciliacao bancaria e emissao de documentos fiscais eletronicos</li>
+              <li>Desenvolvimento de sistemas corporativos, incluindo solucoes de credito e gestao financeira</li>
+              <li>Migracao e modernizacao de sistemas legados, com refatoracao de regras de negocio e bancos de dados</li>
+              <li>Modelagem de dados, analise de requisitos e documentacao tecnica</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag tag--php">PHP</span>
+              <span class="tag tag--python">Python</span>
+              <span class="tag tag--laravel">Laravel</span>
+              <span class="tag tag--api">REST API</span>
+              <span class="tag tag--db">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--prof"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Professor de Desenvolvimento de Software</h3>
+                <p class="timeline-company">Senac Santa Catarina</p>
+              </div>
+              <span class="timeline-period">02/2022 &mdash; 07/2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Planejamento e ministracao de aulas em Desenvolvimento de Sistemas</li>
+              <li>Ensino de tecnologias Backend (PHP, Java, Spring Boot, APIs REST e bancos de dados) e Frontend (HTML, CSS e JavaScript)</li>
+              <li>Orientacao de projetos praticos alinhados as demandas do mercado</li>
+              <li>Aplicacao de boas praticas de programacao, arquitetura de software e metodologias ageis</li>
+              <li>Formacao de profissionais para atuacao em desenvolvimento web e sistemas corporativos</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag tag--php">PHP</span>
+              <span class="tag tag--java">Java</span>
+              <span class="tag tag--spring">Spring Boot</span>
+              <span class="tag tag--js">JavaScript</span>
+              <span class="tag tag--html">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Analista Desenvolvedor de Sistemas</h3>
+                <p class="timeline-company">IPM Sistemas</p>
+              </div>
+              <span class="timeline-period">03/2016 &mdash; 04/2019</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Desenvolvimento de aplicacoes web para Gestao Publica</li>
+              <li>Analise de sistemas para Procuradorias Municipais</li>
+              <li>Integracao de sistemas e bancos de dados</li>
+              <li>Levantamento de requisitos, suporte a usuarios e melhorias continuas</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag tag--web">Web</span>
+              <span class="tag tag--db">SQL</span>
+              <span class="tag tag--analysis">Analise</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-title-accent">03.</span> Habilidades Tecnicas
+      </h2>
+
+      <div class="skills-tabs reveal">
+        <button class="skills-tab active" data-tab="backend">Backend</button>
+        <button class="skills-tab" data-tab="frontend">Frontend</button>
+        <button class="skills-tab" data-tab="ia">Inteligencia Artificial</button>
+        <button class="skills-tab" data-tab="tools">Ferramentas</button>
+      </div>
+
+      <div class="skills-panels">
+
+        <div class="skills-panel active" id="panel-backend">
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>PHP / Laravel</span><span>95%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>Python / Django</span><span>85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>APIs REST</span><span>92%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="92"></div></div>
+          </div>
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>SQL / Bancos de Dados</span><span>90%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>Java / Spring Boot</span><span>70%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-panel" id="panel-frontend">
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>HTML5 / CSS3</span><span>88%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>JavaScript</span><span>82%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>Responsive Design</span><span>85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-panel" id="panel-ia">
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>Machine Learning</span><span>60%</span></div>
+            <div class="skill-track"><div class="skill-fill skill-fill--ia" data-width="60"></div></div>
+          </div>
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>Python para IA</span><span>75%</span></div>
+            <div class="skill-track"><div class="skill-fill skill-fill--ia" data-width="75"></div></div>
+          </div>
+          <div class="skill-bar reveal">
+            <div class="skill-info"><span>Eng. de IA Aplicada</span><span>55%</span></div>
+            <div class="skill-track"><div class="skill-fill skill-fill--ia" data-width="55"></div></div>
+          </div>
+          <p class="skills-note">Em evolucao &mdash; Pos-Graduacao em andamento (previsao 2027)</p>
+        </div>
+
+        <div class="skills-panel" id="panel-tools">
+          <div class="skills-cloud">
+            <span class="cloud-tag">Git</span>
+            <span class="cloud-tag">Docker</span>
+            <span class="cloud-tag">Linux</span>
+            <span class="cloud-tag">MySQL</span>
+            <span class="cloud-tag">PostgreSQL</span>
+            <span class="cloud-tag">Delphi</span>
+            <span class="cloud-tag">VS Code</span>
+            <span class="cloud-tag">Postman</span>
+            <span class="cloud-tag">Scrum</span>
+            <span class="cloud-tag">Kanban</span>
+            <span class="cloud-tag">CI/CD</span>
+            <span class="cloud-tag">REST</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Competencias Comportamentais -->
+      <div class="soft-skills reveal">
+        <h3 class="soft-skills-title">Competencias Comportamentais</h3>
+        <div class="soft-skills-grid">
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon">&#x1F3AF;</div>
+            <span>Lideranca Tecnica e Mentoria</span>
+          </div>
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon">&#x1F50D;</div>
+            <span>Visao Sistemica</span>
+          </div>
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon">&#x1F4CA;</div>
+            <span>Pensamento Analitico</span>
+          </div>
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon">&#x1F4AC;</div>
+            <span>Comunicacao Eficaz</span>
+          </div>
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon">&#x1F4A1;</div>
+            <span>Gestao de Problemas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formacao -->
+  <section class="section section--alt" id="formacao">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-title-accent">04.</span> Formacao e Certificacoes
+      </h2>
+
+      <div class="formacao-grid">
+        <div class="formacao-card formacao-card--grad reveal">
+          <div class="formacao-icon">&#x1F393;</div>
+          <h3>Pos-Graduacao em Engenharia de IA Aplicada</h3>
+          <p class="formacao-inst">Universidade Anhanguera Sao Paulo</p>
+          <span class="formacao-status formacao-status--progress">Em andamento &mdash; Previsao 2027</span>
+        </div>
+        <div class="formacao-card reveal">
+          <div class="formacao-icon">&#x1F4D8;</div>
+          <h3>Tecnologo em Analise e Desenvolvimento de Sistemas</h3>
+          <p class="formacao-inst">UNINTER Centro Universitario Internacional</p>
+          <span class="formacao-status formacao-status--done">Concluido &mdash; 2017</span>
+        </div>
+      </div>
+
+      <h3 class="certs-title reveal">Certificacoes</h3>
+      <div class="certs-grid reveal">
+        <div class="cert-card">
+          <span class="cert-badge">Delphi</span>
+          <p>Programador Delphi Basico &mdash; Proway</p>
+        </div>
+        <div class="cert-card">
+          <span class="cert-badge">Logica</span>
+          <p>Logica de Algoritmos &mdash; Prowayinfo</p>
+        </div>
+        <div class="cert-card">
+          <span class="cert-badge">Django</span>
+          <p>API com Django 3: Django Rest Framework</p>
+        </div>
+        <div class="cert-card">
+          <span class="cert-badge">Python</span>
+          <p>Python: avancando na orientacao a objetos</p>
+        </div>
+        <div class="cert-card">
+          <span class="cert-badge">Python</span>
+          <p>Python Collections parte 1: listas e tuplas</p>
+        </div>
+        <div class="cert-card">
+          <span class="cert-badge">Python</span>
+          <p>Python: entendendo a Orientacao a Objetos</p>
+        </div>
+        <div class="cert-card">
+          <span class="cert-badge">Python</span>
+          <p>Python: comecando com a linguagem</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="section" id="contato">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-title-accent">05.</span> Contato
+      </h2>
+      <div class="contato-wrap reveal">
+        <p class="contato-intro">
+          Estou disponivel para novas oportunidades e colaboracoes.
+          Entre em contato e vamos conversar!
+        </p>
+        <div class="contato-cards">
+          <a href="mailto:gelvazio@gmail.com" class="contato-card">
+            <div class="contato-card-icon">&#x2709;</div>
+            <span class="contato-card-label">Email</span>
+            <span class="contato-card-value">gelvazio@gmail.com</span>
+          </a>
+          <a href="tel:+5547988630404" class="contato-card">
+            <div class="contato-card-icon">&#x1F4F1;</div>
+            <span class="contato-card-label">Telefone</span>
+            <span class="contato-card-value">(47) 98863-0404</span>
+          </a>
+          <a href="https://www.linkedin.com/in/gelvaziocamargo" target="_blank" rel="noopener" class="contato-card">
+            <div class="contato-card-icon">&#x1F517;</div>
+            <span class="contato-card-label">LinkedIn</span>
+            <span class="contato-card-value">gelvaziocamargo</span>
+          </a>
+          <a href="https://github.com/gelvazio" target="_blank" rel="noopener" class="contato-card">
+            <div class="contato-card-icon">&#x1F4BB;</div>
+            <span class="contato-card-label">GitHub</span>
+            <span class="contato-card-value">gelvazio</span>
+          </a>
+        </div>
+        <div class="contato-download">
+          <a href="CURRICULO_GELVAZIO_CAMARGO_V2.pdf" download class="btn-download">
+            <span class="btn-download-icon">&#x1F4C4;</span>
+            Download do Curriculo (PDF)
+          </a>
+        </div>
+        <p class="contato-location">&#x1F4CD; Rio do Sul &mdash; SC, Brasil</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Gelvazio Camargo. Todos os direitos reservados.</p>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">&#x2191;</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

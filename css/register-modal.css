@@ -1,0 +1,210 @@
+/* Register Modal - Overlay Backdrop */
+#modal-register {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, background 0.3s ease, z-index 0.3s ease;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+#modal-register.active {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  pointer-events: auto;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+#modal-register .modal-content {
+  background: var(--bg-2);
+  border: 1px solid rgba(180, 110, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  max-height: auto;
+  overflow-y: visible;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  animation: slideInModal 0.3s ease-out;
+  transform-origin: center;
+}
+
+@keyframes slideInModal {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+#modal-register .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(180, 110, 255, 0.15);
+}
+
+#modal-register .modal-header h3 {
+  color: var(--h2);
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#modal-register .modal-close {
+  background: none;
+  border: none;
+  color: var(--txt-dim);
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-register .modal-close:hover {
+  color: var(--h1);
+}
+
+#modal-register .form-group {
+  margin-bottom: 0.9rem;
+}
+
+#modal-register .form-group label {
+  display: block;
+  color: var(--txt);
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+#modal-register .form-group input {
+  width: 100%;
+  padding: 0.65rem;
+  background: var(--bg-3);
+  border: 1px solid rgba(180, 110, 255, 0.3);
+  border-radius: 6px;
+  color: var(--txt);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+#modal-register .form-group input:focus {
+  outline: none;
+  border-color: var(--h2);
+  box-shadow: 0 0 0 3px rgba(52, 224, 215, 0.1);
+  background: var(--bg-3);
+}
+
+#modal-register .register-message {
+  margin: 0.8rem 0;
+  padding: 0.6rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.85rem;
+  background: rgba(52, 224, 215, 0.1);
+  color: var(--h2);
+  display: none;
+}
+
+#modal-register .register-message:not(:empty) {
+  display: block;
+}
+
+#modal-register .modal-actions {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-end;
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(180, 110, 255, 0.15);
+}
+
+#modal-register .btn-primary,
+#modal-register .btn-secondary {
+  padding: 0.65rem 1.3rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-size: 0.9rem;
+}
+
+#modal-register .btn-primary {
+  background: linear-gradient(135deg, var(--h2), #2eb5c2);
+  color: var(--bg-0);
+}
+
+#modal-register .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(52, 224, 215, 0.3);
+}
+
+#modal-register .btn-secondary {
+  background: var(--bg-3);
+  color: var(--txt);
+  border: 1px solid rgba(180, 110, 255, 0.3);
+}
+
+#modal-register .btn-secondary:hover {
+  border-color: var(--h2);
+  color: var(--h2);
+  background: rgba(52, 224, 215, 0.05);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  #modal-register .modal-content {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    max-width: 100%;
+  }
+
+  #modal-register .modal-header h3 {
+    font-size: 1rem;
+  }
+
+  #modal-register .form-group {
+    margin-bottom: 0.8rem;
+  }
+
+  #modal-register .form-group label {
+    font-size: 0.85rem;
+  }
+
+  #modal-register .form-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  #modal-register .modal-actions {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  #modal-register .btn-primary,
+  #modal-register .btn-secondary {
+    width: 100%;
+    padding: 0.6rem 1rem;
+  }
+}
