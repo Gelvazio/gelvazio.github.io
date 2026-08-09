@@ -362,7 +362,7 @@
     }
   };
 
-  var currentLang = localStorage.getItem('portfolio-lang') || 'pt';
+  var currentLang = 'pt';
 
   // ── i18n: Apply ─────────────────────────────────────────
   function t(key) {
