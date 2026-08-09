@@ -52,5 +52,11 @@ var alteracoes = [
     hora: "00:35",
     solicitado: "Botão de alterações deve exibir 'Última Alteração em Data Hora:Minuto' da última entrada do array; salvar regra no CLAUDE.md",
     feito: "Atualizado script no index.html: botão exibe '📋 Última Alteração em [data] [hora]' lendo a última entrada de alteracoes.js; regra documentada no CLAUDE.md"
+  },
+  {
+    data: "09/08/2026",
+    hora: "00:40",
+    solicitado: "Painel de alterações: exibir apenas as 20 últimas; botão 'Carregar todas as alterações' no cabeçalho ao lado do título quando houver mais de 20",
+    feito: "Script atualizado: renderiza até 20 entradas; botão 'Carregar todas (N)' no header entre o título e o ✕; ao clicar substitui o conteúdo por todas as entradas e remove o botão"
   }
 ];

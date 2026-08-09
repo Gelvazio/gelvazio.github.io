@@ -513,6 +513,8 @@
     (function () {
       if (typeof alteracoes === 'undefined') return;
 
+      var LIMITE = 20;
+
       var style = document.createElement('style');
       style.textContent = [
         '#alt-btn{background:none;border:none;color:#7c6fa0;font-size:12px;cursor:pointer;padding:0;margin-top:6px;transition:color .2s}',
@@ -529,7 +531,9 @@
         '.alt-label{display:inline-block;font-size:10px;font-weight:700;border-radius:4px;padding:2px 6px;margin-right:4px;margin-bottom:4px}',
         '.alt-label.sol{background:rgba(59,130,246,.2);color:#93c5fd}',
         '.alt-label.fei{background:rgba(16,185,129,.2);color:#6ee7b7}',
-        '.alt-text{font-size:12px;color:#d1c4e9;line-height:1.5;margin:2px 0 0}'
+        '.alt-text{font-size:12px;color:#d1c4e9;line-height:1.5;margin:2px 0 0}',
+        '#alt-load-all{background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.3);border-radius:6px;color:#c4b5fd;font-size:11px;font-weight:600;cursor:pointer;padding:4px 10px;white-space:nowrap;transition:background .2s}',
+        '#alt-load-all:hover{background:rgba(124,58,237,.35)}'
       ].join('');
       document.head.appendChild(style);
 
@@ -537,19 +541,31 @@
       var ultima = alteracoes[alteracoes.length - 1];
       btn.textContent = '📋 Última Alteração em ' + ultima.data + ' ' + ultima.hora;
 
+      function renderItens(lista) {
+        var html = '';
+        lista.forEach(function (a) {
+          html += '<div class="alt-item">';
+          html += '<div class="alt-meta">📅 ' + a.data + ' &nbsp;⏰ ' + a.hora + '</div>';
+          html += '<span class="alt-label sol">Solicitado</span>';
+          html += '<p class="alt-text">' + a.solicitado + '</p>';
+          html += '<span class="alt-label fei">Feito</span>';
+          html += '<p class="alt-text">' + a.feito + '</p>';
+          html += '</div>';
+        });
+        return html;
+      }
+
+      var lista = alteracoes.slice().reverse();
       var panel = document.createElement('div');
       panel.id = 'alt-panel';
-      var html = '<div id="alt-panel-header"><h2>Histórico de Alterações</h2><button id="alt-close">✕</button></div>';
-      alteracoes.slice().reverse().forEach(function (a) {
-        html += '<div class="alt-item">';
-        html += '<div class="alt-meta">📅 ' + a.data + ' &nbsp;⏰ ' + a.hora + '</div>';
-        html += '<span class="alt-label sol">Solicitado</span>';
-        html += '<p class="alt-text">' + a.solicitado + '</p>';
-        html += '<span class="alt-label fei">Feito</span>';
-        html += '<p class="alt-text">' + a.feito + '</p>';
-        html += '</div>';
-      });
-      panel.innerHTML = html;
+
+      var btnCarregar = lista.length > LIMITE
+        ? '<button id="alt-load-all">⬇ Carregar todas (' + lista.length + ')</button>'
+        : '';
+      var cabecalho = '<div id="alt-panel-header"><h2>Histórico de Alterações</h2>' + btnCarregar + '<button id="alt-close">✕</button></div>';
+      var corpo = renderItens(lista.slice(0, LIMITE));
+
+      panel.innerHTML = cabecalho + '<div id="alt-body">' + corpo + '</div>';
       document.body.appendChild(panel);
 
       btn.addEventListener('click', function () {
@@ -557,7 +573,13 @@
       });
 
       panel.addEventListener('click', function (e) {
-        if (e.target.id === 'alt-close') panel.classList.remove('open');
+        if (e.target.id === 'alt-close') {
+          panel.classList.remove('open');
+        }
+        if (e.target.id === 'alt-load-all') {
+          document.getElementById('alt-body').innerHTML = renderItens(lista);
+          e.target.remove();
+        }
       });
     })();
   </script>
