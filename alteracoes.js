@@ -58,5 +58,11 @@ var alteracoes = [
     hora: "00:40",
     solicitado: "Painel de alterações: exibir apenas as 20 últimas; botão 'Carregar todas as alterações' no cabeçalho ao lado do título quando houver mais de 20",
     feito: "Script atualizado: renderiza até 20 entradas; botão 'Carregar todas (N)' no header entre o título e o ✕; ao clicar substitui o conteúdo por todas as entradas e remove o botão"
+  },
+  {
+    data: "09/08/2026",
+    hora: "00:45",
+    solicitado: "Adicionar seção detalhada no CLAUDE.md explicando como o projeto funciona, com base no graphify, e regra de atualizar a cada alteração",
+    feito: "Adicionada seção 'Como este projeto funciona' no CLAUDE.md com: visão geral, estrutura de arquivos, seções do site, sistema i18n, god nodes do grafo (t, applyLanguage, getTypingPhrases, typeLoop, restartTyping), hero cards, timeline de experiências, tema, efeitos visuais, painel de alterações e favicon"
   }
 ];
