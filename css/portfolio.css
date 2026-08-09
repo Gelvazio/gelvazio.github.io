@@ -217,7 +217,7 @@ body {
 
 .hero-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-bottom: 40px;
 }
@@ -246,6 +246,10 @@ body {
 
 .hero-card--ia:hover {
   border-color: rgba(255, 184, 77, 0.5);
+}
+
+.hero-card--math:hover {
+  border-color: rgba(100, 220, 130, 0.5);
 }
 
 .hero-card-icon {
@@ -1134,6 +1138,10 @@ body {
 
 [data-theme="light"] .hero-card--ia:hover {
   border-color: rgba(200, 138, 26, 0.4);
+}
+
+[data-theme="light"] .hero-card--math:hover {
+  border-color: rgba(40, 160, 80, 0.4);
 }
 
 [data-theme="light"] .btn-cta--primary {
