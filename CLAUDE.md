@@ -20,6 +20,22 @@ O site suporta três idiomas (PT, EN, ES). Ao alterar qualquer texto:
 - Atualizar **`languages.json`** (espelho do main.js)
 - Manter os três idiomas sincronizados: `pt`, `en`, `es`
 
+## Registro de Alterações (alteracoes.js)
+
+A cada tarefa concluída, adicione uma entrada no arquivo `alteracoes.js` no array `alteracoes`:
+
+```js
+{
+  data: "DD/MM/YYYY",      // data atual
+  hora: "HH:MM",           // hora e minuto atuais
+  solicitado: "...",        // o que o usuário pediu
+  feito: "..."              // o que foi implementado
+}
+```
+
+- Insira sempre no **final** do array (ordem cronológica)
+- O painel de alterações fica disponível no site via botão flutuante `📋 N` (canto inferior direito), sempre visível
+
 ## Idioma inicial do site
 
 O idioma inicial é sempre **PT** (português), definido em `js/main.js`:

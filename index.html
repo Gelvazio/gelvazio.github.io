@@ -506,5 +506,60 @@
   <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">&#x2191;</button>
 
   <script src="js/main.js"></script>
+  <script src="alteracoes.js"></script>
+  <script>
+    (function () {
+      if (typeof alteracoes === 'undefined') return;
+
+      var style = document.createElement('style');
+      style.textContent = [
+        '#alt-btn{position:fixed;bottom:72px;right:20px;z-index:9997;background:rgba(30,20,60,.7);color:#7c6fa0;border:1px solid rgba(124,58,237,.2);border-radius:8px;padding:5px 10px;font-size:11px;cursor:pointer;backdrop-filter:blur(6px);transition:color .2s,border-color .2s,background .2s}',
+        '#alt-btn:hover{color:#c4b5fd;border-color:rgba(124,58,237,.5);background:rgba(30,20,60,.9)}',
+        '#alt-panel{display:none;position:fixed;bottom:110px;right:20px;z-index:9998;width:440px;max-height:70vh;overflow-y:auto;background:#1a1035;border:1px solid rgba(124,58,237,.35);border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.6);font-family:Inter,sans-serif}',
+        '#alt-panel.open{display:block}',
+        '#alt-panel-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid rgba(124,58,237,.2)}',
+        '#alt-panel-header h2{margin:0;font-size:14px;font-weight:700;color:#c4b5fd}',
+        '#alt-close{background:none;border:none;color:#7c6fa0;font-size:18px;cursor:pointer;line-height:1;padding:0}',
+        '#alt-close:hover{color:#c4b5fd}',
+        '.alt-item{padding:14px 20px;border-bottom:1px solid rgba(255,255,255,.06)}',
+        '.alt-item:last-child{border-bottom:none}',
+        '.alt-meta{font-size:11px;color:#7c6fa0;margin-bottom:6px}',
+        '.alt-label{display:inline-block;font-size:10px;font-weight:700;border-radius:4px;padding:2px 6px;margin-right:4px;margin-bottom:4px}',
+        '.alt-label.sol{background:rgba(59,130,246,.2);color:#93c5fd}',
+        '.alt-label.fei{background:rgba(16,185,129,.2);color:#6ee7b7}',
+        '.alt-text{font-size:12px;color:#d1c4e9;line-height:1.5;margin:2px 0 0}'
+      ].join('');
+      document.head.appendChild(style);
+
+      var btn = document.createElement('button');
+      btn.id = 'alt-btn';
+      btn.textContent = '📋 ' + alteracoes.length;
+      btn.title = 'Histórico de Alterações';
+      document.body.appendChild(btn);
+
+      var panel = document.createElement('div');
+      panel.id = 'alt-panel';
+      var html = '<div id="alt-panel-header"><h2>Histórico de Alterações</h2><button id="alt-close">✕</button></div>';
+      alteracoes.slice().reverse().forEach(function (a) {
+        html += '<div class="alt-item">';
+        html += '<div class="alt-meta">📅 ' + a.data + ' &nbsp;⏰ ' + a.hora + '</div>';
+        html += '<span class="alt-label sol">Solicitado</span>';
+        html += '<p class="alt-text">' + a.solicitado + '</p>';
+        html += '<span class="alt-label fei">Feito</span>';
+        html += '<p class="alt-text">' + a.feito + '</p>';
+        html += '</div>';
+      });
+      panel.innerHTML = html;
+      document.body.appendChild(panel);
+
+      btn.addEventListener('click', function () {
+        panel.classList.toggle('open');
+      });
+
+      panel.addEventListener('click', function (e) {
+        if (e.target.id === 'alt-close') panel.classList.remove('open');
+      });
+    })();
+  </script>
 </body>
 </html>
