@@ -14,14 +14,14 @@
       "hero.card.backend.title": "Backend Developer",
       "hero.card.backend.desc": "PHP • Python • Laravel • Django",
       "hero.card.professor.title": "Professor",
-      "hero.card.professor.desc": "Senac SC • Dev Backend & Frontend",
+      "hero.card.professor.desc": "Senai SC • Tecnologia da Informacao e Comunicacao",
       "hero.card.ia.title": "IA Engineer",
       "hero.card.ia.desc": "Pos-Graduacao em Eng. de IA Aplicada",
       "hero.cta.contact": "Fale Comigo",
       "hero.cta.cv": "Download CV",
       "typing.phrases": [
         "Desenvolvedor Backend Senior",
-        "Professor de Desenvolvimento",
+        "Professor de TIC no Senai",
         "Especialista em PHP & Python",
         "Engenheiro de IA em Formacao",
         "Full Stack Developer"
@@ -32,9 +32,34 @@
       "sobre.stat.certs": "Certificacoes",
       "sobre.p1": "Desenvolvedor Full Stack e Backend Senior com mais de <strong>15 anos de experiencia</strong> em desenvolvimento de software, analise de sistemas e educacao tecnologica.",
       "sobre.p2": "Especialista em <strong>PHP</strong>, <strong>Python</strong> e <strong>Inteligencia Artificial</strong>, com atuacao em projetos de gestao publica, ERP, qualidade de software e aplicacoes web escalaveis.",
-      "sobre.p3": "Possuo forte capacidade analitica, visao sistemica e experiencia em ambientes ageis. Tambem atuei como <strong>professor no Senac SC</strong>, formando profissionais nas areas de desenvolvimento Backend e Frontend.",
+      "sobre.p3": "Possuo forte capacidade analitica, visao sistemica e experiencia em ambientes ageis. Atualmente atuo como <strong>professor no Senai SC</strong>, na area de Tecnologia da Informacao e Comunicacao.",
       "sobre.p4": "Atualmente cursando <strong>Pos-Graduacao em Engenharia de IA Aplicada</strong> pela Universidade Anhanguera, buscando unir experiencia de backend com o poder da Inteligencia Artificial.",
       "exp.title": "Experiencia Profissional",
+      "exp.senai.role": "Professor de Tecnologia da Informacao e Comunicacao",
+      "exp.senai.period": "08/2026 — Atual",
+      "exp.senai.items": [
+        "Planejamento e ministracao de aulas em Tecnologia da Informacao e Comunicacao",
+        "Ensino de fundamentos de informatica, hardware, software, redes e sistemas operacionais",
+        "Desenvolvimento de projetos praticos voltados a infraestrutura de TI e suporte tecnico",
+        "Aplicacao de metodologias ativas e recursos digitais no ensino tecnico",
+        "Formacao de tecnicos para atuacao no mercado de Tecnologia da Informacao"
+      ],
+      "exp.ibs_qa.role": "Analista de Qualidade",
+      "exp.ibs_qa.items": [
+        "Gestao de releases e controle de versoes de software Desktop",
+        "Automacao de testes utilizando TestComplete e Delphi Script",
+        "Validacao de sistemas Desktop, ERP e aplicacoes Mobile",
+        "Elaboracao e execucao de planos, casos e testes de regressao",
+        "Identificacao, registro e acompanhamento de defeitos e homologacao de novas versoes",
+        "Atuacao integrada com equipes de desenvolvimento para melhoria continua dos produtos"
+      ],
+      "exp.ibs_suporte.role": "Especialista em Suporte de TI",
+      "exp.ibs_suporte.items": [
+        "Atendimento e suporte tecnico de primeiro nivel aos usuarios",
+        "Consultas avancadas em banco de dados para investigacao e correcao de problemas",
+        "Analise de regras de negocio e suporte a operacao dos sistemas",
+        "Registro, acompanhamento e resolucao de chamados tecnicos"
+      ],
       "exp.t2.role": "Desenvolvedor Full Stack PHP | Python",
       "exp.t2.items": [
         "Desenvolvimento e manutencao de sistemas web em PHP, Python e Laravel",
@@ -108,14 +133,14 @@
       "hero.card.backend.title": "Backend Developer",
       "hero.card.backend.desc": "PHP • Python • Laravel • Django",
       "hero.card.professor.title": "Professor",
-      "hero.card.professor.desc": "Senac SC • Backend & Frontend Dev",
+      "hero.card.professor.desc": "Senai SC • Information & Communication Technology",
       "hero.card.ia.title": "AI Engineer",
       "hero.card.ia.desc": "Postgraduate in Applied AI Engineering",
       "hero.cta.contact": "Get in Touch",
       "hero.cta.cv": "Download CV",
       "typing.phrases": [
         "Senior Backend Developer",
-        "Software Development Professor",
+        "ICT Professor at Senai",
         "PHP & Python Specialist",
         "AI Engineer in Training",
         "Full Stack Developer"
@@ -126,9 +151,34 @@
       "sobre.stat.certs": "Certifications",
       "sobre.p1": "Full Stack and Senior Backend Developer with over <strong>15 years of experience</strong> in software development, systems analysis, and technology education.",
       "sobre.p2": "Specialist in <strong>PHP</strong>, <strong>Python</strong>, and <strong>Artificial Intelligence</strong>, with experience in public management projects, ERP, software quality, and scalable web applications.",
-      "sobre.p3": "I have strong analytical skills, systemic vision, and experience in agile environments. I also worked as a <strong>professor at Senac SC</strong>, training professionals in Backend and Frontend development.",
+      "sobre.p3": "I have strong analytical skills, systemic vision, and experience in agile environments. I currently work as a <strong>professor at Senai SC</strong>, in the area of Information and Communication Technology.",
       "sobre.p4": "Currently pursuing a <strong>Postgraduate degree in Applied AI Engineering</strong> at Anhanguera University, aiming to combine backend experience with the power of Artificial Intelligence.",
       "exp.title": "Professional Experience",
+      "exp.senai.role": "Information and Communication Technology Professor",
+      "exp.senai.period": "08/2026 — Present",
+      "exp.senai.items": [
+        "Planning and teaching classes in Information and Communication Technology",
+        "Teaching fundamentals of computing, hardware, software, networks, and operating systems",
+        "Developing practical projects focused on IT infrastructure and technical support",
+        "Applying active methodologies and digital resources in technical education",
+        "Training technicians for careers in the Information Technology market"
+      ],
+      "exp.ibs_qa.role": "Quality Analyst",
+      "exp.ibs_qa.items": [
+        "Release management and version control for Desktop software",
+        "Test automation using TestComplete and Delphi Script",
+        "Validation of Desktop, ERP, and Mobile systems",
+        "Development and execution of regression test plans and cases",
+        "Bug identification, logging, and tracking; new version homologation",
+        "Integrated collaboration with development teams for continuous product improvement"
+      ],
+      "exp.ibs_suporte.role": "IT Support Specialist",
+      "exp.ibs_suporte.items": [
+        "First-level technical support and incident resolution for end users",
+        "Advanced database queries for problem investigation and correction",
+        "Business rules analysis and system operations support",
+        "Ticket registration, follow-up, and resolution"
+      ],
       "exp.t2.role": "Full Stack Developer PHP | Python",
       "exp.t2.items": [
         "Development and maintenance of web systems in PHP, Python, and Laravel",
@@ -202,14 +252,14 @@
       "hero.card.backend.title": "Backend Developer",
       "hero.card.backend.desc": "PHP • Python • Laravel • Django",
       "hero.card.professor.title": "Profesor",
-      "hero.card.professor.desc": "Senac SC • Dev Backend & Frontend",
+      "hero.card.professor.desc": "Senai SC • Tecnologia de la Informacion y Comunicacion",
       "hero.card.ia.title": "Ingeniero de IA",
       "hero.card.ia.desc": "Posgrado en Ing. de IA Aplicada",
       "hero.cta.contact": "Contactame",
       "hero.cta.cv": "Descargar CV",
       "typing.phrases": [
         "Desarrollador Backend Senior",
-        "Profesor de Desarrollo de Software",
+        "Profesor de TIC en Senai",
         "Especialista en PHP y Python",
         "Ingeniero de IA en Formacion",
         "Desarrollador Full Stack"
@@ -220,9 +270,34 @@
       "sobre.stat.certs": "Certificaciones",
       "sobre.p1": "Desarrollador Full Stack y Backend Senior con mas de <strong>15 años de experiencia</strong> en desarrollo de software, analisis de sistemas y educacion tecnologica.",
       "sobre.p2": "Especialista en <strong>PHP</strong>, <strong>Python</strong> e <strong>Inteligencia Artificial</strong>, con experiencia en proyectos de gestion publica, ERP, calidad de software y aplicaciones web escalables.",
-      "sobre.p3": "Poseo fuerte capacidad analitica, vision sistemica y experiencia en entornos agiles. Tambien actue como <strong>profesor en Senac SC</strong>, formando profesionales en las areas de desarrollo Backend y Frontend.",
+      "sobre.p3": "Poseo fuerte capacidad analitica, vision sistemica y experiencia en entornos agiles. Actualmente actuo como <strong>profesor en Senai SC</strong>, en el area de Tecnologia de la Informacion y Comunicacion.",
       "sobre.p4": "Actualmente cursando un <strong>Posgrado en Ingenieria de IA Aplicada</strong> en la Universidad Anhanguera, buscando unir la experiencia backend con el poder de la Inteligencia Artificial.",
       "exp.title": "Experiencia Profesional",
+      "exp.senai.role": "Profesor de Tecnologia de la Informacion y Comunicacion",
+      "exp.senai.period": "08/2026 — Actualidad",
+      "exp.senai.items": [
+        "Planificacion e imparticion de clases en Tecnologia de la Informacion y Comunicacion",
+        "Ensenanza de fundamentos de informatica, hardware, software, redes y sistemas operativos",
+        "Desarrollo de proyectos practicos orientados a infraestructura de TI y soporte tecnico",
+        "Aplicacion de metodologias activas y recursos digitales en la ensenanza tecnica",
+        "Formacion de tecnicos para actuacion en el mercado de Tecnologia de la Informacion"
+      ],
+      "exp.ibs_qa.role": "Analista de Calidad",
+      "exp.ibs_qa.items": [
+        "Gestion de releases y control de versiones de software Desktop",
+        "Automatizacion de pruebas con TestComplete y Delphi Script",
+        "Validacion de sistemas Desktop, ERP y aplicaciones Mobile",
+        "Elaboracion y ejecucion de planes y casos de prueba de regresion",
+        "Identificacion, registro y seguimiento de defectos y homologacion de versiones",
+        "Colaboracion integrada con equipos de desarrollo para la mejora continua de productos"
+      ],
+      "exp.ibs_suporte.role": "Especialista en Soporte de TI",
+      "exp.ibs_suporte.items": [
+        "Atencion y soporte tecnico de primer nivel a usuarios",
+        "Consultas avanzadas en base de datos para investigacion y correccion de problemas",
+        "Analisis de reglas de negocio y soporte a la operacion de sistemas",
+        "Registro, seguimiento y resolucion de tickets tecnicos"
+      ],
       "exp.t2.role": "Desarrollador Full Stack PHP | Python",
       "exp.t2.items": [
         "Desarrollo y mantenimiento de sistemas web en PHP, Python y Laravel",
