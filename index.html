@@ -501,6 +501,7 @@
   <!-- Footer -->
   <footer class="footer">
     <p data-i18n="footer">&copy; 2026 Gelvazio Camargo. Todos os direitos reservados.</p>
+    <button id="alt-btn">📋 Alterações</button>
   </footer>
 
   <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">&#x2191;</button>
@@ -513,9 +514,9 @@
 
       var style = document.createElement('style');
       style.textContent = [
-        '#alt-btn{position:fixed;bottom:72px;right:20px;z-index:9997;background:rgba(30,20,60,.7);color:#7c6fa0;border:1px solid rgba(124,58,237,.2);border-radius:8px;padding:5px 10px;font-size:11px;cursor:pointer;backdrop-filter:blur(6px);transition:color .2s,border-color .2s,background .2s}',
-        '#alt-btn:hover{color:#c4b5fd;border-color:rgba(124,58,237,.5);background:rgba(30,20,60,.9)}',
-        '#alt-panel{display:none;position:fixed;bottom:110px;right:20px;z-index:9998;width:440px;max-height:70vh;overflow-y:auto;background:#1a1035;border:1px solid rgba(124,58,237,.35);border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.6);font-family:Inter,sans-serif}',
+        '#alt-btn{background:none;border:none;color:#7c6fa0;font-size:12px;cursor:pointer;padding:0;margin-top:6px;transition:color .2s}',
+        '#alt-btn:hover{color:#c4b5fd}',
+        '#alt-panel{display:none;position:fixed;bottom:60px;left:50%;transform:translateX(-50%);z-index:9998;width:480px;max-width:94vw;max-height:70vh;overflow-y:auto;background:#1a1035;border:1px solid rgba(124,58,237,.35);border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.6);font-family:Inter,sans-serif}',
         '#alt-panel.open{display:block}',
         '#alt-panel-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid rgba(124,58,237,.2)}',
         '#alt-panel-header h2{margin:0;font-size:14px;font-weight:700;color:#c4b5fd}',
@@ -531,11 +532,8 @@
       ].join('');
       document.head.appendChild(style);
 
-      var btn = document.createElement('button');
-      btn.id = 'alt-btn';
-      btn.textContent = '📋 ' + alteracoes.length;
-      btn.title = 'Histórico de Alterações';
-      document.body.appendChild(btn);
+      var btn = document.getElementById('alt-btn');
+      btn.textContent = '📋 Alterações (' + alteracoes.length + ')';
 
       var panel = document.createElement('div');
       panel.id = 'alt-panel';
