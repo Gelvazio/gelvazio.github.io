@@ -45,7 +45,8 @@ A cada tarefa concluída, adicione uma entrada no arquivo `alteracoes.js` no arr
 ```
 
 - Insira sempre no **final** do array (ordem cronológica)
-- O painel de alterações fica disponível no site via botão flutuante `📋 N` (canto inferior direito), sempre visível
+- O botão no footer exibe automaticamente: **"📋 Última Alteração em DD/MM/YYYY HH:MM"** com os dados da última entrada do array
+- O painel de alterações fica disponível no site via botão no footer, sempre visível
 
 ## Idioma inicial do site
 

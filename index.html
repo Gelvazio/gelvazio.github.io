@@ -534,7 +534,8 @@
       document.head.appendChild(style);
 
       var btn = document.getElementById('alt-btn');
-      btn.textContent = '📋 Alterações (' + alteracoes.length + ')';
+      var ultima = alteracoes[alteracoes.length - 1];
+      btn.textContent = '📋 Última Alteração em ' + ultima.data + ' ' + ultima.hora;
 
       var panel = document.createElement('div');
       panel.id = 'alt-panel';

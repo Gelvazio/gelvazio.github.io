@@ -46,5 +46,11 @@ var alteracoes = [
     hora: "00:31",
     solicitado: "Atualizar CLAUDE.md para nunca pedir permissão — sempre executar diretamente",
     feito: "Adicionada seção 'Autonomia Total' no CLAUDE.md instruindo execução direta sem confirmações para qualquer ação (editar, criar, commit, push, graphify)"
+  },
+  {
+    data: "09/08/2026",
+    hora: "00:35",
+    solicitado: "Botão de alterações deve exibir 'Última Alteração em Data Hora:Minuto' da última entrada do array; salvar regra no CLAUDE.md",
+    feito: "Atualizado script no index.html: botão exibe '📋 Última Alteração em [data] [hora]' lendo a última entrada de alteracoes.js; regra documentada no CLAUDE.md"
   }
 ];
