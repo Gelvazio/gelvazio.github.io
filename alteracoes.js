@@ -33,6 +33,18 @@ var alteracoes = [
     data: "09/08/2026",
     hora: "00:25",
     solicitado: "Criar regra para salvar alterações em alteracoes.js e renderizar no localhost em menu Alterações",
-    feito: "Criado alteracoes.js com array de objetos (data, hora, solicitado, feito); adicionado no index.html painel flutuante 'Alterações' visível apenas em localhost; regra adicionada ao CLAUDE.md"
+    feito: "Criado alteracoes.js com array de objetos (data, hora, solicitado, feito); botão flutuante discreto no footer após 'Todos os direitos reservados.'; painel sempre visível online e offline; regra adicionada ao CLAUDE.md"
+  },
+  {
+    data: "09/08/2026",
+    hora: "00:30",
+    solicitado: "Criar favicon de tecnologia para o site, adicionar no site e publicar",
+    feito: "Criado favicon.svg com ícone </> (código), fundo gradiente roxo escuro (#0f0c24→#1e1050), colchetes em #c084fc e barra em #818cf8; adicionado <link rel='icon'> no index.html"
+  },
+  {
+    data: "09/08/2026",
+    hora: "00:31",
+    solicitado: "Atualizar CLAUDE.md para nunca pedir permissão — sempre executar diretamente",
+    feito: "Adicionada seção 'Autonomia Total' no CLAUDE.md instruindo execução direta sem confirmações para qualquer ação (editar, criar, commit, push, graphify)"
   }
 ];

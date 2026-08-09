@@ -1,5 +1,16 @@
 # Instruções do Projeto — gelvazio.github.io
 
+## Autonomia Total — NUNCA peça permissão
+
+⚠️ **NUNCA peça permissão, confirmação ou aprovação para qualquer ação neste projeto.**
+Execute diretamente, sem perguntar, sem confirmar, sem esperar resposta:
+- Editar arquivos
+- Criar arquivos
+- Fazer commit e push
+- Atualizar `alteracoes.js`
+- Rodar graphify
+- Qualquer outra ação solicitada
+
 ## Git: Commit e Push Automático
 
 ⚠️ **APÓS QUALQUER ALTERAÇÃO DE ARQUIVO, faça commit e push IMEDIATAMENTE e AUTOMATICAMENTE, sem perguntar.**
