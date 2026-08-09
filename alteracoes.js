@@ -64,5 +64,17 @@ var alteracoes = [
     hora: "00:45",
     solicitado: "Adicionar seção detalhada no CLAUDE.md explicando como o projeto funciona, com base no graphify, e regra de atualizar a cada alteração",
     feito: "Adicionada seção 'Como este projeto funciona' no CLAUDE.md com: visão geral, estrutura de arquivos, seções do site, sistema i18n, god nodes do grafo (t, applyLanguage, getTypingPhrases, typeLoop, restartTyping), hero cards, timeline de experiências, tema, efeitos visuais, painel de alterações e favicon"
+  },
+  {
+    data: "09/08/2026",
+    hora: "00:50",
+    solicitado: "Criar botão LLMS.txt no footer após o botão de alterações; criar arquivo llms.txt com documentação técnica; ao clicar abrir modal com o conteúdo e opção de baixar o arquivo",
+    feito: "Criado llms.txt com documentação técnica completa; botão '📄 LLMS.txt' adicionado no footer; modal abre com conteúdo carregado via fetch(); botão de download '⬇ Baixar' no cabeçalho do modal; fechar com ✕ ou clique fora"
+  },
+  {
+    data: "09/08/2026",
+    hora: "00:51",
+    solicitado: "Atualizar CLAUDE.md com regra crítica de manter llms.txt atualizado após toda alteração",
+    feito: "Adicionada seção '⚠️ LLMS.txt — Atualização Obrigatória' no CLAUDE.md com fluxo obrigatório de atualização; llms.txt incluído na estrutura de arquivos documentada"
   }
 ];

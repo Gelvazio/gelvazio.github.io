@@ -31,6 +31,20 @@ O site suporta três idiomas (PT, EN, ES). Ao alterar qualquer texto:
 - Atualizar **`languages.json`** (espelho do main.js)
 - Manter os três idiomas sincronizados: `pt`, `en`, `es`
 
+## ⚠️ LLMS.txt — Atualização Obrigatória
+
+> **CRÍTICO: O arquivo `llms.txt` DEVE ser atualizado após QUALQUER alteração significativa no site.**
+
+O arquivo `llms.txt` contém a documentação técnica completa do projeto — é o espelho externo da seção "Como este projeto funciona" deste `CLAUDE.md`. Sempre que a seção abaixo for atualizada, o `llms.txt` deve ser atualizado com o mesmo conteúdo (em formato texto puro, sem markdown de títulos).
+
+**O botão "📄 LLMS.txt" no footer abre um modal que carrega este arquivo via `fetch()`.** Qualquer desatualização é exibida diretamente ao visitante do site.
+
+Fluxo obrigatório a cada mudança:
+1. Alterar o código / conteúdo do site
+2. Atualizar a seção "Como este projeto funciona" neste arquivo
+3. **Atualizar `llms.txt` com o mesmo conteúdo técnico**
+4. Fazer commit e push de todos os arquivos alterados
+
 ## Registro de Alterações (alteracoes.js)
 
 A cada tarefa concluída, adicione uma entrada no arquivo `alteracoes.js` no array `alteracoes`:
@@ -78,6 +92,7 @@ gelvazio.github.io/
 ├── index.html          ← Única página HTML; estrutura de todas as seções
 ├── favicon.svg         ← Ícone </> roxo, gradiente escuro (#0f0c24 → #1e1050)
 ├── alteracoes.js       ← Array de objetos com histórico de alterações do projeto
+├── llms.txt            ← Documentação técnica para LLMs; atualizar após cada mudança
 ├── languages.json      ← Espelho dos dados i18n de main.js (mantido em sincronia)
 ├── CLAUDE.md           ← Instruções para o Claude Code (este arquivo)
 ├── js/
